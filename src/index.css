@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #13294B;
+  --color-secondary: #4B9CD3;
+  --color-white: #FFFFFF;
+  --color-black: #151515;
+  --color-gray: #F8F8F8;
+
+  background-color: var(--color-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
