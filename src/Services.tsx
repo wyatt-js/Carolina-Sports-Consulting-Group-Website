@@ -8,7 +8,7 @@ const services = [
   },
   {
     icon: <LuChartColumnIncreasing className="text-[var(--color-primary)] text-4xl mb-4" />,
-    title: 'Increasing Engagement',
+    title: 'Digital and Social Transformation',
     description: 'desc'
   },
   {

@@ -1,10 +1,15 @@
-import './index.css'
+import './index.css';
 
 export default function Home() {
-    return (
-        <div className="min-h-screen flex items-center justify-center px-6">
-      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+  return (
+    <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
 
+      <img
+        src="/playdesign.png"
+        alt="Football play background"
+        className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none z-0"      />
+
+      <div className="relative z-10 max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center fade-in-up">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--color-white)] mb-6">
             Connecting Brands With The Next <span className="text-[var(--color-secondary)]">Generation</span>
@@ -18,16 +23,22 @@ export default function Home() {
           >
             Contact Us
           </a>
-        </div>  
+          <a
+            href="https://docs.google.com/forms/d/1y2qeOSWUZTYnjiQDjbplEpdL4WcBBiQRkA_7Mnr54ik/edit"
+            className="inline-block px-6 py-3 text-white bg-[var(--color-black)] rounded-lg font-semibold hover:bg-white hover:text-[var(--color-black)] transition ml-4"
+          >
+            Apply Now
+          </a>
+        </div>
 
         <div className="flex justify-center">
           <img
-            src="/fellas.png"
-            className="max-h-[500px] w-auto rounded-lg shadow-lg"
+            src="/tower.png"
+            className="max-h-[500px] w-auto rounded-lg shadow-lg z-10"
+            alt="Tower"
           />
         </div>
-
       </div>
     </div>
-    );
+  );
 }
