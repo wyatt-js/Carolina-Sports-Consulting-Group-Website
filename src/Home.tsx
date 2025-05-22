@@ -35,7 +35,7 @@ export default function Home() {
           <img
             src="/tower.png"
             className="max-h-[500px] w-auto rounded-lg shadow-lg z-10"
-            alt="Tower"
+            alt="Carolina Sports Consulting Group"
           />
         </div>
       </div>

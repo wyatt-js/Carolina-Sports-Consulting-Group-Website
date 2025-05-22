@@ -7,6 +7,9 @@ import Services from './Services.tsx'
 import Clients from './Clients.tsx'
 import Teams from './Teams.tsx'
 import Contact from './Contact.tsx'
+import { inject } from '@vercel/analytics';
+
+inject();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

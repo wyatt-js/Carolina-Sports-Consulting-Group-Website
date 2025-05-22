@@ -35,3 +35,8 @@ html {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+.mask{
+  mask-image: 'LinkedIn.png';
+  mask-repeat: no-repeat;
+}
