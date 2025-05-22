@@ -8,17 +8,16 @@ export default function Header() {
         <a href="#home">
         <img src='LogoFull.png' />
         </a>
-
-        <nav className="hidden md:flex space-x-6 text-lg font-black">
-          <a href="#services" className="hover:text-[var(--color-primary)] text-white transition pt-2">Services</a>
-          <a href="#clients" className="hover:text-[var(--color-primary)] text-white transition pt-2">Clients</a>
-          <a href="#teams" className="hover:text-[var(--color-primary)] text-white transition pt-2">Teams</a>
+        <nav className="flex space-x-6 text-lg font-black">
+          <a href="#services" className="hidden md:inline hover:text-[var(--color-primary)] text-white transition pt-2">Services</a>
+          <a href="#clients" className="hidden md:inline hover:text-[var(--color-primary)] text-white transition pt-2">Clients</a>
+          <a href="#teams" className="hidden md:inline hover:text-[var(--color-primary)] text-white transition pt-2">Teams</a>
           <a
-          href="#contact"
-          className="hidden md:inline-block px-4 py-2 text-white bg-[var(--color-primary)] rounded hover:bg-white hover:text-[var(--color-primary)] transition"
-        >
-          Contact Us
-        </a>
+            href="#contact"
+            className="inline-block px-4 py-2 text-white bg-[var(--color-primary)] rounded hover:bg-white hover:text-[var(--color-primary)] transition"
+          >
+            Contact Us
+          </a>
         </nav>
 
       </div>

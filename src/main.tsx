@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
     <section id="home" className="scroll-mt-20">
       <Home/>
     </section>
-    <section id="services" className="scroll-mt-20">
+    <section id="services" className="scroll-mt-35">
       <Services/>
     </section>
     <section id="clients" className="scroll-mt-40">

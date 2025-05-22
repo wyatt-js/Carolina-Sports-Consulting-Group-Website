@@ -89,7 +89,7 @@ export default function Contact() {
             <img src="Instagram.png" alt="Instagram" className="h-16 w-16" />
           </a>
         </div>
-        <h1 className="text-center mt-4">© 2025 Carolina Sports Consulting Group</h1>
+        <h1 className="text-center mt-4">© {(new Date).getFullYear()} Carolina Sports Consulting Group</h1>
       </div>
     </section>
 

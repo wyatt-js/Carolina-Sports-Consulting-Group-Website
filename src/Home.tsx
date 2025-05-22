@@ -14,18 +14,18 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--color-white)] mb-6">
             Connecting Brands With The Next <span className="text-[var(--color-secondary)]">Generation</span>
           </h1>
-          <p className="text-[var(--color-gray)] text-lg mb-6">
+          <p className="text-[var(--color-gray)] text-lg mb-6 fade-in-up">
             CSCG is...
           </p>
           <a
             href="#contact"
-            className="inline-block px-6 py-3 text-white bg-[var(--color-secondary)] rounded-lg font-semibold hover:bg-white hover:text-[var(--color-secondary)] transition"
+            className="inline-block px-6 py-3 text-white bg-[var(--color-secondary)] rounded-lg font-semibold hover:bg-white hover:text-[var(--color-secondary)] fade-in-up transition"
           >
             Contact Us
           </a>
           <a
             href="https://docs.google.com/forms/d/1y2qeOSWUZTYnjiQDjbplEpdL4WcBBiQRkA_7Mnr54ik/edit"
-            className="inline-block px-6 py-3 text-white bg-[var(--color-black)] rounded-lg font-semibold hover:bg-white hover:text-[var(--color-black)] transition ml-4"
+            className="inline-block px-6 py-3 text-white bg-[var(--color-black)] rounded-lg font-semibold hover:bg-white hover:text-[var(--color-black)] fade-in-up transition ml-4"
           >
             Apply Now
           </a>
