@@ -8,12 +8,12 @@ export default function Clients() {
     {
       title: "Pittsburgh Pirates",
       image:
-        "public/pirates.png",
+        "pirates.png",
     },
     {
       title: "Rams Club",
       image:
-        "public/ramsclub.png",
+        "ramsclub.png",
     },
     {
       title: "SMU Athletics",
@@ -28,12 +28,12 @@ export default function Clients() {
     {
       title: "Charlotte Sports Foundation",
       image:
-        "public/charsports.png",
+        "charsports.png",
     },
     {
       title: "UNC Athletics",
       image:
-        "public/UNC.png",
+        "UNC.png",
     },
   ];
   return (
