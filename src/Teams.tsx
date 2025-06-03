@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {LuCircleHelp, LuCrown} from 'react-icons/lu';
+
 
 type Person = {
   name: string;
@@ -62,6 +63,14 @@ const boxes: Box[] = [
 export default function Teams() {
   const [activeBox, setActiveBox] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (activeBox === 'Executive') {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [activeBox]);
+
   return (
     <div className="relative">
       <h2 className="mb-12 pl-0 md:pl-24 text-3xl md:text-4xl font-bold text-white underline decoration-[var(--color-secondary)] underline-offset-4 decoration-4 text-center md:text-left">
@@ -83,9 +92,9 @@ export default function Teams() {
 
       {activeBox === 'Executive' && (
         <div className="fixed inset-0 bg-black/5 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-[var(--color-black)] rounded-2xl p-10 max-w-4xl shadow-xl text-center">
-            <h2 className="text-4xl text-white font-bold mb-4">{activeBox}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-[var(--color-black)] rounded-2xl p-10 max-w-4xl shadow-xl text-center max-h-[90vh] overflow-y-auto">
+            <h2 className="text-4xl text-white font-bold md:mb-4">{activeBox}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6">
               {People.filter((person) => person.project === 'Exec').map((person, index) => (
                 <div key={index} className="relative group text-center pt-6">
                   <img
