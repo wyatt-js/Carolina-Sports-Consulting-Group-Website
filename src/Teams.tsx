@@ -91,8 +91,17 @@ export default function Teams() {
 		</div>
 
       {activeBox === 'Executive' && (
-        <div className="fixed inset-0 bg-black/5 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-[var(--color-black)] rounded-2xl p-10 max-w-4xl shadow-xl text-center max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black/5 backdrop-blur-sm flex items-center justify-center z-50" onClick={() => setActiveBox(null)}>
+          <div className="relative bg-[var(--color-black)] rounded-2xl p-10 max-w-4xl shadow-xl text-center max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+          <div className="absolute top-2 right-4 md:top-4 md:right-6">
+            <button
+              onClick={() => setActiveBox(null)}
+              className="text-white text-4xl font-bold hover:text-[var(--color-secondary)] transition"
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </div>
             <h2 className="text-4xl text-white font-bold md:mb-4">{activeBox}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6">
               {People.filter((person) => person.project === 'Exec').map((person, index) => (
@@ -113,13 +122,6 @@ export default function Teams() {
                 </div>
               ))}
             </div>
-
-            <button
-              onClick={() => setActiveBox(null)}
-              className="mt-6 bg-[var(--color-secondary)] text-white px-4 py-2 rounded-lg hover:text-[var(--color-secondary)] hover:bg-white transition"
-            >
-              Close
-            </button>
           </div>
         </div>
       )}
