@@ -49,7 +49,7 @@ export default function Services() {
 				<div className="flex flex-col flex-1 justify-between text-black bg-white p-6 shadow-lg text-center rounded-b-lg">
 					<div className="space-y-3">
 					<h3 className="text-2xl md:text-xl font-semibold">{service.title}</h3>
-					<p className="text-xl md:text-sm text-gray-400">{service.description}</p>
+					<p className="text-xl md:text-sm text-gray-600">{service.description}</p>
 					</div>
 				</div>
 				</div>

@@ -32,7 +32,7 @@ export default function Home() {
 
         <div className="flex justify-center">
           <img
-            src="/tower.png"
+            src="/tower.webp"
             className="max-h-[500px] w-auto rounded-lg shadow-lg z-10"
             alt="Carolina Sports Consulting Group"
           />

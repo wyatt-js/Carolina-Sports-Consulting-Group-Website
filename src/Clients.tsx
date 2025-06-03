@@ -43,7 +43,7 @@ Clients
       </h2>
       <div className="relative md:mb-28 md:mt-12 py-24">
         <div className="absolute inset-0 z-0">
-          <img src="wave-graphic.svg" className="w-full h-full object-cover" />
+          <img src="wave-graphic.svg" className="w-full h-full object-cover" alt="Wave Graphic"/>
         </div>
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8 px-24 z-10">
           {items.map((item, index) => (
