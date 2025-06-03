@@ -11,7 +11,7 @@ export default function Header() {
         <nav className="flex space-x-6 text-lg font-black">
           <a href="#services" className="hidden md:inline hover:text-[var(--color-primary)] text-white transition pt-2">Services</a>
           <a href="#clients" className="hidden md:inline hover:text-[var(--color-primary)] text-white transition pt-2">Clients</a>
-          <a href="#teams" className="hidden md:inline hover:text-[var(--color-primary)] text-white transition pt-2">Consultants</a>
+          <a href="#teams" className="hidden md:inline hover:text-[var(--color-primary)] text-white transition pt-2">Teams</a>
           <a
             href="#contact"
             className="inline-block px-4 py-2 text-white bg-[var(--color-primary)] rounded hover:bg-white hover:text-[var(--color-primary)] transition"

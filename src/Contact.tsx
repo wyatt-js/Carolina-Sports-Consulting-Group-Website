@@ -8,16 +8,23 @@ export default function Contact() {
     Message: ''
   });
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = async (event: any) => {
+  interface FormData {
+    FirstName: string;
+    LastName: string;
+    Email: string;
+    Message: string;
+  }
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     await fetch('https://usebasin.com/f/79c1542f7938', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form)
+      body: JSON.stringify(form as FormData)
     });
     alert('Message sent!');
     setForm({ FirstName: '', LastName: '', Email: '', Message: '' });
