@@ -23,7 +23,7 @@ export default function Home() {
             Contact Us
           </a>
           <a
-            href="https://docs.google.com/forms/d/1y2qeOSWUZTYnjiQDjbplEpdL4WcBBiQRkA_7Mnr54ik/edit"
+            href="https://lnkd.in/eCfxzVxn"
             className="inline-block px-6 py-3 text-white bg-[var(--color-black)] rounded-lg font-semibold hover:bg-white hover:text-[var(--color-black)] fade-in-up transition ml-4"
           >
             Apply Now

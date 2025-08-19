@@ -13,7 +13,8 @@ type Person = {
 type Box = {
   label: string;
   color: string;
-  icon: React.ReactElement;
+  icon?: React.ReactElement;
+  image?: string;
 };
 
 const People: Person[] = [
@@ -52,8 +53,8 @@ const People: Person[] = [
 ];
 
 const boxes: Box[] = [
-  {label: 'Executive', color: "#4B9CD3", icon: <LuCrown className="text-8xl text-yellow-400" />},
-  {label: 'Client 1', color: "grey", icon: <LuCircleHelp className="text-8xl" />},
+  {label: 'Executive', color: "brown", icon: <LuCrown className="text-8xl text-yellow-400" />},
+  {label: 'UNC Football', color: "#4B9CD3", image: 'UNC.png'},
   {label: 'Client 2', color: "grey", icon:  <LuCircleHelp className="text-8xl" />},
   {label: 'Client 3', color: "grey", icon: <LuCircleHelp className="text-8xl" />},
   {label: 'Client 4', color: "grey", icon: <LuCircleHelp className="text-8xl" />},
@@ -81,7 +82,7 @@ export default function Teams() {
 			{boxes.map((box, index) => (
 				<div key={index} onClick={() => setActiveBox(box.label)} className="cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
 					<div className="w-full h-36 shadow-lg rounded-t-lg flex items-center justify-center" style={{ backgroundColor: box.color }}>
-						{box.icon}
+						{box.icon ? box.icon : box.image ? <img src={box.image} alt={box.label} className="w-2/3 h-5/7" /> : null}
 					</div>
 					<div className="flex text-black bg-white p-6 shadow-lg text-center justify-center items-center rounded-b-lg max-h-20">
 						<h3 className="text-xl font-semibold">{box.label}</h3>
